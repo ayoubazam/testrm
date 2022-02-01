@@ -1,10 +1,9 @@
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+The project aims to create a library of a Captcha system that can be used  easily in other mobile projects for Android.
 
-
+The beginnings of the project was about creating a 5 steps Captcha game using Captcha service by Ocapi project(by teklia)
 
 
 ### Built With
@@ -16,37 +15,48 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ## Getting Started
 
-In order to use our library, you n
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+You can open this project using Android Studio. So you can set it up locally.
+Please follow these steps below, to avoid errors running the project.
 
 ### Prerequisites
 
-In order to use our library, you should install first " " using " "
 
-* retrofit
+
+* something
   ```sh 
-   install retrofit -g
+   install something -g
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free API Key at teklia
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/username/name.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
+3. Enter your API in `file.kt`
+   ```kt
    const API_KEY = 'ENTER YOUR API';
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Gradle
+
+You should add the following dependencies into the gradle file for the project to run properly.
+You find the gradle file in ( ...)
+
+1. Dagger & Hilt
+   ```kt
+   const API_KEY = 'ENTER YOUR API';
+   ```
+2. Retrofit
+   ```kt
+   const API_KEY = 'ENTER YOUR API';
+   ```
+3. Moshi
+   ```kt
+   const API_KEY = 'ENTER YOUR API';
+   ```
+
 
 
 
