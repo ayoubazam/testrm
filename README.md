@@ -42,20 +42,57 @@ Please follow these steps below, to avoid errors running the project.
 ## Gradle
 
 You should add the following dependencies into the gradle file for the project to run properly.
-You find the gradle file in ( ...)
 
-1. Dagger & Hilt
+First, add the "hilt-android-gradle-plugin" plugin to your project's root build.gradle file:
+
+```kt
+   buildscript {
+    ...
+    dependencies {
+        ...
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.38.1'
+    }
+}
+   
+```
+Then, apply the Gradle plugin and add these dependencies in your app/build.gradle file:
+
+1. Hilt
+
    ```kt
-   const API_KEY = 'ENTER YOUR API';
+      ...
+   plugins {
+   id 'kotlin-kapt'
+   id 'dagger.hilt.android.plugin'
+   }
+
+   android {
+      ...
+   }
+
+   dependencies {
+      implementation "com.google.dagger:hilt-android:2.38.1"
+      kapt "com.google.dagger:hilt-compiler:2.38.1"
+   }
+
    ```
 2. Retrofit
    ```kt
-   const API_KEY = 'ENTER YOUR API';
+   implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+   implementation "com.squareup.retrofit2:converter-moshi:2.5.0"
+   implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
    ```
 3. Moshi
    ```kt
-   const API_KEY = 'ENTER YOUR API';
+   implementation "com.squareup.moshi:moshi:1.8.0"
+   kapt "com.squareup.moshi:moshi-kotlin-codegen:1.8.0"
    ```
+4. Kotlin couroutines
+   ```kt
+   implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.0'
+   implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.0' 
+   ```
+
 
 
 
